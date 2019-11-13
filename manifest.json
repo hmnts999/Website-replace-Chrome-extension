@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "CountDown Plugin",
+    "description": "This extension will redirect the blank google search page to google news page",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "matches": [
+                "https://www.google.com/"
+            ]
+        }
+    ]
+}
